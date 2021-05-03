@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="15dp">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1, 2, 3, 4,5,6,7"
+            android:background="#D0D0D0">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/installmentListSerialHeader"
+                    android:padding="8dp"
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_column="1"
+                    android:text="SN"/>
+                <TextView
+                    android:id="@+id/installmentDateHeader"
+                    android:text="Installment Date"
+                    android:layout_width="150dp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_column="1"
+                    />
+                <TextView
+                    android:id="@+id/installmentInterestHeader"
+                    android:text="Interest"
+                    android:layout_width="100dp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_column="1"
+                    />
+                <TextView
+                    android:id="@+id/openingBalanceHeader"
+                    android:text="Opening Balance"
+                    android:layout_width="100dp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_column="1"
+                    />
+                <TextView
+                    android:id="@+id/principleAmountHeader"
+                    android:text="Principle"
+                    android:layout_width="100dp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_column="1"
+                    />
+                <TextView
+                    android:id="@+id/installmentAmountHeader"
+                    android:text="Total Payment"
+                    android:layout_width="100dp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_column="1"
+                    />
+                <TextView
+                    android:id="@+id/endingBalanceHeader"
+                    android:text="Ending Balance"
+                    android:layout_width="100dp"
+                    android:padding="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_column="1"
+                    />
+            </TableRow>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/installmentDateRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarStyle="insideInset"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="horizontal"/>
+        </TableLayout>
+    </HorizontalScrollView>
+
+
+</RelativeLayout>

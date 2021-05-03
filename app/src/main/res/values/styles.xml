@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="Widget.Theme.BJITAcademyHomeTask.NoActionBar.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+
+    </style>
+
+    <style name="Widget.Theme.BJITAcademyHomeTask.NoActionBar.ButtonBar.Fullscreen" parent="">
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="navigation_size"  parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
